@@ -1,0 +1,31 @@
+exemplar,category strength,exemplar strength
+(hot air) balloon,0.000,0.000
+airplane,0.063,0.004
+bicycle,0.100,0.019
+boat,0.007,0.007
+bus,0.067,0.037
+car,0.304,0.037
+carriage,0.000,0.011
+cart,0.007,0.033
+go-cart,0.000,0.007
+helicopter,0.000,0.011
+hovercraft,0.000,0.015
+jeep,0.000,0.007
+kick scooter,0.000,0.010
+motorbike (moto),0.004,0.019
+rocket,0.000,0.000
+scooter (bromfiets),0.000,0.015
+scooter (brommer),0.022,0.015
+skateboard,0.000,0.000
+sled,0.000,0.000
+submarine,0.000,0.000
+subway train,0.000,0.011
+taxi,0.004,0.037
+tractor,0.000,0.004
+trailer,0.000,0.000
+train,0.048,0.019
+tram,0.004,0.044
+truck (camion),0.004,0.048
+truck (vrachtwagen),0.004,0.052
+van,0.000,0.052
+zeppelin,0.000,0.000

@@ -1,0 +1,27 @@
+exemplar,generation frequency,mean rank position
+ant,67,3.47761194
+bee,66,3.742424242
+beetle,50,4.22
+bumblebee,12,6.5
+butterfly,18,5.333333333
+caterpillar,6,5.833333333
+centipede,11,5.727272727
+cockchafer,3,4.0
+cockroach,18,4.277777778
+cricket,9,3.0
+dragonfly,10,5.6
+earwig,3,6.666666667
+flee,11,5.181818182
+fly,101,2.277227723
+fruit fly,2,7.0
+grasshopper,17,5.058823529
+horsefly,4,5.5
+ladybug,28,4.321428571
+leech,1,5.0
+louse,6,6.666666667
+mosquito,99,2.565656566
+moth,2,6.0
+spider,54,3.574074074
+wasp,55,4.181818182
+wood louse,3,6.333333333
+worm,16,4.3125

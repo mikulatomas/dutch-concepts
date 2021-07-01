@@ -1,0 +1,34 @@
+exemplar,missing,mean,std,nonmissing
+apron,0,6.06,1.29,36
+bottle,0,6.58,0.9,33
+bowl,0,5.76,1.37,34
+can opener,0,6.0,1.26,26
+colander,1,5.61,1.8,31
+electric kettle,0,5.93,1.6,30
+fork,0,6.43,0.94,30
+fridge,1,6.38,0.91,32
+glass,0,6.37,0.85,38
+grater,0,4.61,1.78,31
+kettle,0,5.82,1.38,34
+knife,0,6.25,1.14,32
+microwave oven,0,6.46,0.86,26
+mixer,0,6.19,1.23,32
+mug,0,5.85,1.3,33
+nutcracker,0,6.03,1.47,34
+oven,0,6.36,1.06,33
+pan,0,6.22,1.18,32
+percolator,0,6.03,1.4,32
+place mat,0,5.47,1.57,32
+plate,0,6.3,1.21,33
+pot,0,6.31,1.11,35
+scales,0,6.55,0.71,33
+scissors,0,6.65,0.65,34
+sieve,0,5.03,2.13,32
+spatula,0,4.2,1.77,30
+spoon,0,6.41,1.37,27
+stove,0,5.87,1.54,31
+teaspoon,0,5.63,1.7,32
+toaster,0,6.13,1.31,31
+towel,0,5.81,1.41,36
+whisk,0,5.76,1.58,34
+wok,0,6.29,1.19,31

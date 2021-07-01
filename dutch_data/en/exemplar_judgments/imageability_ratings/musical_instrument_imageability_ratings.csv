@@ -1,0 +1,28 @@
+exemplar,missing,mean,std,nonmissing
+accordion,0,6.06,1.21,31
+bagpipe,0,5.77,1.18,31
+banjo,1,4.1,1.88,30
+bass guitar,0,4.83,1.67,29
+bassoon,5,3.63,1.79,30
+cello,0,4.4,1.97,35
+clarinet,0,5.19,1.87,32
+cymbals,3,5.16,1.9,32
+double bass,0,4.84,1.82,32
+drum,0,5.71,2.09,28
+drum set,0,6.29,1.01,28
+flute,0,6.09,1.35,33
+guitar,0,6.73,0.57,33
+harmonica,0,6.09,1.44,32
+harp,0,5.94,1.14,33
+harpsichord,0,4.1,2.14,30
+organ,0,5.31,1.45,35
+pan flute,0,5.0,1.57,31
+piano,0,6.19,1.62,32
+recorder,0,5.75,1.48,32
+saxophone,0,6.17,1.27,35
+synthesizer,1,5.42,1.56,33
+tambourine,0,5.34,1.47,29
+triangle,0,5.75,1.46,28
+trombone,0,4.61,1.66,28
+trumpet,0,6.52,0.8,33
+violin,0,6.23,0.94,30

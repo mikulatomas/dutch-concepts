@@ -1,0 +1,22 @@
+feature,respondent 0,respondent 1,respondent 10,respondent 11,respondent 2,respondent 3,respondent 4,respondent 5,respondent 6,respondent 7,respondent 8,respondent 9,mean,std
+determines your social status,1,2,1,1,1,1,2,2,2,2,1,2,1.5,0.5222329678670935
+earns you money,3,3,3,3,3,3,3,2,3,3,2,3,2.8333333333333335,0.38924947208076144
+has strong influence upon the rest of your life,3,2,-1,2,-1,2,1,1,2,2,0,2,1.25,1.2880570286640687
+involves wearing a particular outfit,-1,1,-2,1,0,0,1,-1,1,1,0,0,0.08333333333333333,0.996204919895622
+is a job,3,3,2,2,2,3,3,3,2,3,3,1,2.5,0.674199862463242
+is advantageous for society / economy,1,1,2,0,1,1,1,0,-1,2,2,1,0.9166666666666666,0.90033663737852
+is an activity,1,1,1,1,2,2,2,1,1,1,1,1,1.25,0.45226701686664544
+is different for men and women,-2,-1,-3,-1,1,1,0,0,-1,0,1,-2,-0.5833333333333334,1.3113721705515067
+is regulated by law,1,0,-3,1,0,1,1,-2,0,1,1,-2,-0.08333333333333333,1.443375672974064
+is something adults do,3,2,1,1,-1,2,1,3,2,3,2,1,1.6666666666666667,1.1547005383792517
+is something you do,1,1,2,1,2,3,3,2,3,2,1,2,1.9166666666666667,0.7929614610987591
+is something you do every day,3,2,2,1,1,3,3,2,1,2,2,2,2.0,0.7385489458759964
+is somthing you do throughout your life,3,1,-2,1,-1,0,1,0,1,1,-3,0,0.16666666666666666,1.5859229221975182
+requires a certain education,2,3,3,2,1,1,2,0,1,2,2,3,1.8333333333333333,0.9374368665610922
+requires specific knowledge,2,2,3,2,2,1,2,2,2,2,2,2,2.0,0.4264014327112209
+requires specific skills,2,2,2,2,2,1,2,2,2,2,2,2,1.9166666666666667,0.28867513459481287
+source of stress / frustrations,2,2,-1,0,1,-1,0,2,3,3,1,2,1.1666666666666667,1.403458930534474
+takes up a lot of time,3,2,2,1,1,2,2,1,1,2,2,2,1.75,0.621581560508061
+there are different kinds,-1,0,-3,0,1,-1,0,0,1,2,0,1,0.0,1.2792042981336627
+you do not practise it at your home,2,2,-2,0,0,0,1,1,1,-1,-3,0,0.08333333333333333,1.5050420310248867
+you have to enjoy it in order to keep it up,1,1,-1,1,0,0,2,1,3,2,2,-1,0.9166666666666666,1.2401124093721454
