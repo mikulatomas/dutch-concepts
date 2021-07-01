@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="dutch-concepts",
@@ -8,6 +8,6 @@ setup(
     url="https://github.com/mikulatomas/dutch-concepts",
     author="Tomáš Mikula",
     author_email="mail@tomasmikula.cz",
-    packages=[],
+    packages=find_packages(),
     classifiers=["Development Status :: 1 - Planning"],
 )
