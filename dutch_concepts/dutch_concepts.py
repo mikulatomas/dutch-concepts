@@ -1,6 +1,6 @@
 import logging
 import os
-import urllib
+import urllib.request
 import zipfile
 
 from .loaders import load_exemplar_similarity, load_features, load_exemplar_judgements
