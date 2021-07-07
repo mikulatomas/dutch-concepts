@@ -11,6 +11,7 @@ from .enums import Category, Domain, FeatureType
 EXEMPLAR_FEATURES_JUDGEMENTS_FOLDER = "exemplar_feature_judgments"
 CATEGORY_FEATURES_FOLDER = "category_features"
 EXEMPLAR_FEATURES_FOLDER = "exemplar_features"
+EXEMPLAR_JUDGMENTS_FOLDER = "exemplar_judgments"
 PAIRWISE_SIMILARITY_FOLDER = "pairwise_similarities"
 RESPONDENTS_FOLDER = "respondents"
 FEATURE_FREQUENCY_FOLDER = "feature_generation_frequency"
@@ -21,9 +22,10 @@ class ExemplarSimilarityData(NamedTuple):
     category: Category
     mean: pd.DataFrame
     respondents: dict
+    name: str
 
     def __repr__(self):
-        return "ExemplarSimilarityData({})".format(self.category)
+        return f"ExemplarSimilarityData({self.category})"
 
 
 class FeaturesDomainData(NamedTuple):
@@ -32,9 +34,10 @@ class FeaturesDomainData(NamedTuple):
     feature_matrix_respondents: dict
     feature_frequency: pd.DataFrame
     feature_type: FeatureType
+    name: str
 
     def __repr__(self):
-        return "FeaturesDomainData({}, {})".format(self.domain, self.feature_type)
+        return f"FeaturesDomainData({self.domain}, {self.feature_type})"
 
 
 class FeaturesCategoryData(NamedTuple):
@@ -44,9 +47,20 @@ class FeaturesCategoryData(NamedTuple):
     feature_frequency: pd.DataFrame
     feature_importance_ratings: pd.DataFrame
     feature_type: FeatureType
+    name: str
 
     def __repr__(self):
-        return "FeaturesCategoryData({}, {})".format(self.domain, self.feature_type)
+        return f"FeaturesCategoryData({self.domain}, {self.feature_type})"
+
+
+class ExemplarJudgementsData(NamedTuple):
+    type: str
+    category: Category
+    data: pd.DataFrame
+    name: str
+
+    def __repr__(self):
+        return f"ExemplarJudgements({self.type}, {self.category})"
 
 
 class Features(NamedTuple):
@@ -55,7 +69,54 @@ class Features(NamedTuple):
     feature_type: FeatureType
 
     def __repr__(self):
-        return "Features({})".format(self.feature_type)
+        return f"Features({self.feature_type})"
+
+
+class ExemplarJudgements(NamedTuple):
+    acquisition_ratings: dict
+    associative_strength: dict
+    exemplar_generation_frequency: dict
+    familiarity_ratings: dict
+    goodness_rank_order: dict
+    goodness_ratings: dict
+    imageability_ratings: dict
+    typicality_ratings: dict
+    word_frequency: dict
+
+    def __repr__(self):
+        return "ExemplarJudgements()"
+
+
+def load_exemplar_judgements(dataset_folder):
+    judgments = [
+        "acquisition_ratings",
+        "associative_strength",
+        "exemplar_generation_frequency",
+        "familiarity_ratings",
+        "goodness_rank_order",
+        "goodness_ratings",
+        "imageability_ratings",
+        "typicality_ratings",
+        "word_frequency",
+    ]
+
+    loaded_judgments = []
+
+    for judgment_name in judgments:
+        judgment_folder = os.path.join(dataset_folder, EXEMPLAR_JUDGMENTS_FOLDER, judgment_name)
+
+        judgment_dict = {}
+
+        for file in glob(os.path.join(judgment_folder, '*.csv')):
+            category = Category.from_str(os.path.basename(file).replace(f"_{judgment_name}.csv", ""))
+            
+            df = pd.read_csv(file, index_col=0)
+
+            judgment_dict[category] = ExemplarJudgementsData(judgment_name, category, df, os.path.basename(file))
+        
+        loaded_judgments.append(judgment_dict)
+
+    return ExemplarJudgements(*loaded_judgments)
 
 
 def load_respondents(source_folder):
@@ -104,7 +165,7 @@ def load_domain_features(source_folder, feature_type):
         )
 
         domains[domain] = FeaturesDomainData(
-            domain, feature_matrix, respondents, feature_frequency, feature_type
+            domain, feature_matrix, respondents, feature_frequency, feature_type, f"{feature_type.value}_features_{domain.value}_domain"
         )
 
     return domains
@@ -139,6 +200,7 @@ def load_category_features(source_folder, feature_type):
             feature_frequency,
             feature_importance_ratings,
             feature_type,
+            f"{feature_type.value}_features_{category.value}_category"
         )
 
     return categories
@@ -179,7 +241,7 @@ def load_exemplar_similarity(dataset_folder):
         )
 
         dataset[category] = ExemplarSimilarityData(
-            category, mean_similarities, respondents
+            category, mean_similarities, respondents, f"{category.value}_pairwise_similarities"
         )
 
     return dataset

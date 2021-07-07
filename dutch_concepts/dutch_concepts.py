@@ -3,7 +3,7 @@ import os
 import urllib
 import zipfile
 
-from .loaders import load_exemplar_similarity, load_features
+from .loaders import load_exemplar_similarity, load_features, load_exemplar_judgements
 from .enums import FeatureType
 
 URL = "https://github.com/mikulatomas/dutch-concepts/raw/master/data/dutch_data.zip"
@@ -35,7 +35,7 @@ class DutchConcepts:
 
         self.exemplar_features = load_features(self.dataset_dir, FeatureType.EXEMPLAR)
 
-        self.exemplar_judgements = None
+        self.exemplar_judgements = load_exemplar_judgements(self.dataset_dir)
 
         self.exemplar_similarities = load_exemplar_similarity(self.dataset_dir)
 
