@@ -10,7 +10,7 @@ URL = "https://github.com/mikulatomas/dutch-concepts/raw/master/data/dutch_data.
 
 
 class DutchConcepts:
-    def __init__(self, root, download=True, language="en"):
+    def __init__(self, root, language="en"):
         self.root = os.path.abspath(root)
 
         if language not in ["en", "nl"]:
@@ -20,16 +20,16 @@ class DutchConcepts:
         self.dataset_dir = os.path.join(self.root, "dutch_data", language)
         self.zip_file = URL.rsplit("/", 1)[-1]
 
-        if download:
-            if not os.path.exists(self.dataset_dir) or not os.listdir(self.dataset_dir):
-                logging.info("Downloading dataset.")
-                self.__download()
-                logging.info("Downloading is done.")
-                logging.info("Extracting dataset.")
-                self.__extract()
-                logging.info("Extracting done.")
-            else:
-                logging.info("Dataset directory is not empty, skipping download.")
+        
+        if not os.path.exists(self.dataset_dir) or not os.listdir(self.dataset_dir):
+            logging.info("Downloading dataset.")
+            self.__download()
+            logging.info("Downloading is done.")
+            logging.info("Extracting dataset.")
+            self.__extract()
+            logging.info("Extracting done.")
+        else:
+            logging.info("Dataset directory is not empty, skipping download.")
 
         self.category_features = load_features(self.dataset_dir, FeatureType.CATEGORY)
 
