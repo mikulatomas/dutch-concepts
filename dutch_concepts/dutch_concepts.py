@@ -19,7 +19,6 @@ class DutchConcepts:
         self.language = language
         self.dataset_dir = os.path.join(self.root, "dutch_data", language)
         self.zip_file = URL.rsplit("/", 1)[-1]
-
         
         if not os.path.exists(self.dataset_dir) or not os.listdir(self.dataset_dir):
             logging.info("Downloading dataset.")
@@ -38,6 +37,9 @@ class DutchConcepts:
         self.exemplar_judgements = load_exemplar_judgements(self.dataset_dir)
 
         self.exemplar_similarities = load_exemplar_similarity(self.dataset_dir)
+    
+    def __repr__(self):
+        return f"DutchConcepts({self.root}, {self.language})"
 
     def __download(self):
         with urllib.request.urlopen(URL) as f:
