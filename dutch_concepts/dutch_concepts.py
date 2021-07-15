@@ -2,6 +2,7 @@ import logging
 import os
 import urllib.request
 import zipfile
+import shutil
 
 from .loaders import load_exemplar_similarity, load_features, load_exemplar_judgements
 from .enums import FeatureType
@@ -10,7 +11,7 @@ URL = "https://github.com/mikulatomas/dutch-concepts/raw/master/data/dutch_data.
 
 
 class DutchConcepts:
-    def __init__(self, download_dir, language="en"):
+    def __init__(self, download_dir, language="en", force_download=False):
         self.download_dir = os.path.abspath(download_dir)
 
         if language not in ["en", "nl"]:
@@ -20,6 +21,10 @@ class DutchConcepts:
         dataset_dir = os.path.join(self.download_dir, "dutch_data", language)
         zip_file = URL.rsplit("/", 1)[-1]
         
+        if os.path.exists(dataset_dir) and force_download:
+            logging.info("Force download - removing previous version.")
+            shutil.rmtree(os.path.join(self.download_dir, "dutch_data"))
+
         if not os.path.exists(dataset_dir) or not os.listdir(dataset_dir):
             logging.info("Downloading dataset.")
             self.__download(zip_file)
