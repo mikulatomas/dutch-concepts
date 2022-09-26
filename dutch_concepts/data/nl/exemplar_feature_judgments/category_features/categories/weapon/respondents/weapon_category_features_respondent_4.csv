@@ -1,0 +1,21 @@
+exemplar,bestaat al lang,bestaat in verschillende groottes,bestaat in verschillende soorten,bestaat in verschillende vormen,bevat kogels,dient om je te beschermen,gebruiksvoorwerp,gemaakt uit metaal,heeft een handvat,heeft een loop,is gevaarlijk,is gewelddadig,is hard,is onderhevig aan regels,is populair in Amerika,is verboden,is zwaar,is zwart,je kan er iemand mee doden,je kan er iemand mee verwonden,kan je mee schieten,komt vaak voor in films,moet je een wapenvergunning voor hebben,vernielt,vind je vaak in actiefilms,wordt alleen door mensen gebruikt,wordt gebruikt bij sport,wordt gebruikt door criminelen,wordt gebruikt door politie,wordt gebruikt door soldaten,wordt gebruikt om oorlog te voeren,wordt gebruikt om te jagen
+axe,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+bazooka,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,0,0,1,1,1,0,0,1,1
+bow,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,0,1,1,0,0,0,0,1,1,1,0,0,0,0
+canon,0,1,0,0,0,0,0,1,1,0,1,1,0,1,0,1,0,1,0,1,1,0,0,0,0,1,0,1,0,0,1,0
+club,1,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,1,1,0,0,1
+dagger,1,1,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,1,1,0,0,0,0
+double barrelled shotgun,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,1,0,1,1,1,0,0,1,0
+grenade,0,1,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,1,0,1,1,0
+knuckle dusters,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+machine gun,0,0,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,1,0,1,1,0,1,0,0,1,0,1,0,0,1,0
+pistol,0,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,1,1,1,0,1,1,1,1,0,0,1,0
+rifle,0,1,0,0,1,0,0,1,1,0,0,1,0,1,0,1,0,1,0,1,1,1,1,1,1,1,1,1,0,0,1,0
+rope,1,0,1,0,0,1,1,1,0,1,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,0,1,0,0,0
+shield,1,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0,1,1,0,1,0,0,0,1,0,1,1,0,0,0,0,0
+slingshot,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,1,1,0,0,0,0
+spear,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+stick,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0
+sword,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,1,0,1,1,1,0,0,0,0
+tank,0,1,1,0,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,1,0
+whip,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,1,1,0,1,0

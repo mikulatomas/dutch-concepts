@@ -1,0 +1,31 @@
+exemplar,missing,mean,std,nonmissing
+(hot air) balloon,0,6.56,0.76,32
+airplane,0,6.5,0.95,32
+bicycle,0,6.75,0.52,28
+boat,0,6.43,0.81,35
+bus,0,6.21,1.25,34
+car,0,6.82,0.39,34
+carriage,0,5.71,1.53,31
+cart,0,5.61,1.47,28
+go-cart,0,5.82,1.63,33
+helicopter,0,6.38,0.78,29
+hovercraft,4,4.0,1.86,27
+jeep,0,5.89,1.22,37
+kick scooter,0,5.19,1.78,27
+motorbike (brommer),0,6.21,0.99,33
+motorbike (moto),0,5.94,1.54,33
+rocket,0,6.52,0.68,31
+scooter,0,6.44,1.08,32
+skateboard,0,6.09,1.17,32
+sled,0,6.13,1.13,32
+submarine,0,6.13,1.22,30
+subway train,0,5.58,1.47,26
+taxi,0,6.19,0.98,31
+tractor,0,6.47,0.72,32
+trailer,0,6.09,0.98,33
+train,0,6.7,0.64,33
+tram,0,6.22,1.04,32
+truck (camion),0,6.59,0.87,29
+truck (vrachtwagen),0,6.57,0.68,30
+van,0,5.89,1.3,35
+zeppelin,0,5.93,1.03,29

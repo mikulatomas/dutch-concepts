@@ -1,0 +1,10 @@
+EXEMPLAR_FEATURES_JUDGEMENTS_FOLDER = "exemplar_feature_judgments"
+CATEGORY_FEATURES_FOLDER = "category_features"
+EXEMPLAR_FEATURES_FOLDER = "exemplar_features"
+EXEMPLAR_JUDGMENTS_FOLDER = "exemplar_judgments"
+PAIRWISE_SIMILARITY_FOLDER = "pairwise_similarities"
+RESPONDENTS_FOLDER = "respondents"
+FEATURE_FREQUENCY_FOLDER = "feature_generation_frequency"
+FEATURE_IMPORTANCE_RATINGS_FOLDER = "feature_importance_ratings"
+
+DATASET_NAME = "DutchConcepts"

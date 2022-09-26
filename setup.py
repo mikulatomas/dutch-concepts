@@ -1,13 +1,22 @@
-from setuptools import setup
+from setuptools import setup, find_packages
+
+__version__ = "0.1.0"
+__author__ = "Tomáš Mikula"
+__email__ = "mail@tomasmikula.cz"
 
 setup(
-    name="dutch-concepts",
-    version="0.0.1",
+    name="dutch_concepts",
+    version=__version__,
     description="",
     long_description="",
     url="https://github.com/mikulatomas/dutch-concepts",
-    author="Tomáš Mikula",
-    author_email="mail@tomasmikula.cz",
-    packages=[],
+    author=__author__,
+    author_email=__email__,
+    packages=find_packages(),
+    install_requires=[
+        "pandas",
+    ],
     classifiers=["Development Status :: 1 - Planning"],
+    include_package_data=True,
+    package_data={"": ["data/*.csv"]},
 )
