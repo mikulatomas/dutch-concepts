@@ -17,6 +17,6 @@ setup(
         "pandas",
     ],
     classifiers=["Development Status :: 1 - Planning"],
+    package_dir={"": "dutch_concepts"},
     package_data={"": ["*.csv"]},
-    zip_safe=False
 )
