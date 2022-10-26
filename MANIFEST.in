@@ -1,1 +1,1 @@
-include *.csv
+recursive-include data *
