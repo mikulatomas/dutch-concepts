@@ -18,4 +18,5 @@ setup(
     ],
     classifiers=["Development Status :: 1 - Planning"],
     package_data={"": ["*.csv"]},
+    zip_safe=False
 )
