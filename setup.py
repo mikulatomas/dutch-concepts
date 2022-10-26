@@ -12,11 +12,11 @@ setup(
     url="https://github.com/mikulatomas/dutch-concepts",
     author=__author__,
     author_email=__email__,
-    packages=find_packages(),
+    packages=["dutch_concepts"],
+    package_dir={"dutch_concepts": "dutch_concepts"},
+    package_data={"dutch_concepts": ["data/**.csv"]},
     install_requires=[
         "pandas",
     ],
     classifiers=["Development Status :: 1 - Planning"],
-    include_package_data=True,
-    package_data={"": ["*.csv"]},
 )
