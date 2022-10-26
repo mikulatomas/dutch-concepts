@@ -20,7 +20,7 @@ class DutchConcepts:
     ) -> None:
         self.language = language
 
-        print(importlib.resources.files(__name__))
+        print(importlib.resources.files(""))
 
         if dataset_dir is None:
             self.dataset_dir = pathlib.Path(
