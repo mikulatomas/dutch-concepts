@@ -1,5 +1,6 @@
 import typing
 import pkg_resources
+import importlib.resources
 import pathlib
 import pandas as pd
 import numpy as np
@@ -18,6 +19,8 @@ class DutchConcepts:
         dataset_dir: typing.Optional[pathlib.Path] = None,
     ) -> None:
         self.language = language
+
+        print(importlib.resources.files(__name__))
 
         if dataset_dir is None:
             self.dataset_dir = pathlib.Path(
