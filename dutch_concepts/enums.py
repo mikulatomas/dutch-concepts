@@ -12,8 +12,8 @@ class Language(Enum):
 
 
 class FeatureType(Enum):
-    EXEMPLAR = "exemplar"
     CATEGORY = "category"
+    EXEMPLAR = "exemplar"
 
     def __str__(self):
         return self.name.title()
