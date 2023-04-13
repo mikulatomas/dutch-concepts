@@ -1,14 +1,13 @@
 from setuptools import setup, find_packages
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"
 __author__ = "Tomáš Mikula"
 __email__ = "mail@tomasmikula.cz"
 
 setup(
     name="dutch_concepts",
     version=__version__,
-    description="",
-    long_description="",
+    description="Cleaned version of Exemplar by feature applicability matrices and other Dutch normative data for semantic concept dataset.",
     url="https://github.com/mikulatomas/dutch-concepts",
     author=__author__,
     author_email=__email__,
@@ -17,5 +16,5 @@ setup(
     install_requires=[
         "pandas",
     ],
-    classifiers=["Development Status :: 1 - Planning"],
+    classifiers=["Development Status :: 4 - Beta"],
 )
